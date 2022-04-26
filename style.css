@@ -105,8 +105,10 @@ body{
     width: 50%;
     position: relative;
     margin-left: 25%;
+    margin-bottom: 20%;
 }
 .bio p{
+    text-align: center;
     font-size: 18;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 0, 0);
