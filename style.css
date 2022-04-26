@@ -22,6 +22,9 @@ body{
     width: 30rem;
     display: flex;
     justify-content: center;
+    animation-name: rotacion;
+    animation-duration: 5s;
+    animation-delay: 2s;
 }
 .header__menu{
     width: 10rem;
@@ -32,12 +35,19 @@ body{
 .header__menu li{
     list-style: none;
     margin-right: 2rem;
+    transition: transform 1s
 
 }
 .header__menu li a{
     text-decoration: none;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header__menu li:hover{
+    transform: scale(1.5);
+    text-shadow:
+
 }
 .imagenBg{
     height: 100vh;
@@ -49,8 +59,21 @@ body{
     padding: 0%;
     display: flex;
 }
+@keyframes rotacion{
+
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(90deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+    
+}
 .footer{
-    background-color: black;
+     background-color: black;
 }
 .footer__links{
    display:grid;
@@ -80,6 +103,8 @@ body{
 }
 .bio img{
     width: 50%;
+    position: relative;
+    margin-left: 25%;
 }
 .bio p{
     font-size: 18;
@@ -111,7 +136,6 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
-    
 }
 
 @media (max-width: 768px){
